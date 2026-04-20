@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advanced Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+
+  <input type="text" id="display" readonly>
+
+  <div class="buttons">
+    <button onclick="clearDisplay()" class="operator">C</button>
+    <button onclick="backspace()" class="operator">⌫</button>
+    <button onclick="pressOperator('/')">÷</button>
+    <button onclick="pressOperator('*')">×</button>
+
+    <button onclick="pressNumber('7')">7</button>
+    <button onclick="pressNumber('8')">8</button>
+    <button onclick="pressNumber('9')">9</button>
+    <button onclick="pressOperator('-')">−</button>
+
+    <button onclick="pressNumber('4')">4</button>
+    <button onclick="pressNumber('5')">5</button>
+    <button onclick="pressNumber('6')">6</button>
+    <button onclick="pressOperator('+')">+</button>
+
+    <button onclick="pressNumber('1')">1</button>
+    <button onclick="pressNumber('2')">2</button>
+    <button onclick="pressNumber('3')">3</button>
+    <button onclick="calculate()" class="equal">=</button>
+
+    <button onclick="pressNumber('0')" class="zero">0</button>
+    <button onclick="pressNumber('.')">.</button>
+  </div>
+
+  <div class="history">
+    <h3>History</h3>
+    <ul id="historyList"></ul>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
